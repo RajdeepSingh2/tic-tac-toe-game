@@ -10,7 +10,11 @@ This project was also converted into an Android mobile app.
 👉 [Play Now](https://tictactoe748.tiiny.site/)
 
 ---
+## 📸 Screenshot
 
+![Game Screenshot](sc.jpg)
+
+---
 ## 📱 Mobile App
 
 This project was converted into an Android app. 
