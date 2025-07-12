@@ -10,6 +10,10 @@ let gameOver = false;
 let xWins = 0, oWins = 0, draws = 0;
 let playerNames = { X: 'X', O: 'O' };
 
+// 🔊 Load move sound
+
+const moveSound = new Audio('sounds/move.wav');
+
 const winningCombos = [
   [0, 1, 2], [3, 4, 5], [6, 7, 8],
   [0, 3, 6], [1, 4, 7], [2, 5, 8],
@@ -46,6 +50,11 @@ function renderBoard() {
 function handleMove(index) {
   if (board[index] || gameOver) return;
   board[index] = currentPlayer;
+
+  // 🔊 Play move sound
+  moveSound.currentTime = 0;
+  moveSound.play();
+
   renderBoard();
 
   const winningCombo = getWinningCombo(currentPlayer);
@@ -79,6 +88,20 @@ function highlightWin(combo) {
 function showResult(message) {
   resultMessage.textContent = message;
   resultScreen.style.display = 'flex';
+
+  // 🗣️ Speak the result aloud
+  const speech = new SpeechSynthesisUtterance();
+
+  if (message.includes('wins')) {
+    const winnerName = message.split(' ')[0];
+    speech.text = `The winner is ${winnerName}`;
+  } else {
+    speech.text = "It's a draw!";
+  }
+
+  speech.pitch = 1;
+  speech.rate = 1;
+  window.speechSynthesis.speak(speech);
 }
 
 function updateScore(winner) {
@@ -111,5 +134,4 @@ themeToggle.addEventListener('click', () => {
   themeToggle.textContent = document.body.classList.contains('dark') ? '☀️' : '🌙';
 });
 
-// Start game initially
 startGame();
