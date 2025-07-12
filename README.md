@@ -34,11 +34,14 @@ You can install it and play offline on your phone.
 
 ## 💡 Features
 
-- Player vs Player mode  
-- Mobile responsive UI  
-- Gradient background  
-- Reset scoreboard  
-- Light/dark theme toggle
+- 🎮 **Player vs Player Mode** – Take turns and battle it out with a friend.
+- 📱 **Mobile Responsive UI** – Smooth layout that adapts beautifully on phones, tablets, and laptops.
+- 🌈 **Gradient Background** – Visually appealing design with soft gradient styling.
+- ♻️ **Reset Scoreboard** – Easily reset game stats and start fresh.
+- 🌙 **Light/Dark Theme Toggle** – Switch themes with a single click for day or night play.
+- 🔊 **Move Sound Effects** – Hear a sound on each move for a more interactive experience.
+- 🗣️ **Voice Result Announcement** – Winner's name is spoken aloud when the game ends.
+
 
 ---
 
