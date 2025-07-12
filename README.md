@@ -7,7 +7,7 @@ This project was also converted into an Android mobile app.
 
 ## 🎮 Live Demo
 
-👉 [Play Now](https://tictactoe748.tiiny.site/)
+👉 [Play Now](https://rajdeepsingh2.github.io/tic-tac-toe-game/)
 
 ---
 ## 📸 Screenshot
